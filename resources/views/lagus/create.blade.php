@@ -21,7 +21,7 @@
                     <select class="form-control" id="artist_id" name="artist_id">
                         @foreach ($artists as $artist)
                         <option value="{{ $artist->id }}" {{ old('artist_id') == $artist->id ? 'selected' : '' }}>
-                            {{ $artist->name }}
+                            {{ $artist->nama}}
                         </option>
                         @endforeach
                     </select>

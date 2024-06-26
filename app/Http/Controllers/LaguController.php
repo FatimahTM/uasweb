@@ -29,7 +29,7 @@ class LaguController extends Controller
     {
         // Ambil daftar artis untuk dropdown
         $artists = Artist::all();
-    
+        dd($artists);
         // Tampilkan form untuk menambahkan lagu baru
         return view('lagus.create', compact('artists'));
     }
